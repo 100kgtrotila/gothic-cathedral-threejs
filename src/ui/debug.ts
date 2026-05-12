@@ -38,7 +38,7 @@ export function createDebugPanel(meshes: ExportedMeshes, lights: SceneLights, pa
   modelFolder.add(params, 'modelY').min(-8).max(8).step(0.1).onChange(updateModelPosition);
   modelFolder.add(params, 'modelZ').min(-10).max(10).step(0.1).onChange(updateModelPosition);
 
-  gui.add(particles.material, 'size').min(0.01).max(0.15).step(0.005).name('Particle size');
+  gui.add(particles.material, 'size').min(0.01).max(0.1).step(0.002).name('Rain drop size');
   gui.add(particles, 'visible').name('Show particles');
   gui.add(params, 'spinText').name('Spin text');
 
