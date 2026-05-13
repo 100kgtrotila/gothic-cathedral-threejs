@@ -2,7 +2,6 @@ import { MOUSE, PerspectiveCamera } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { Updatable } from './loop';
 
-// Описуємо структуру того, що повертає функція
 export interface CameraRig {
   camera: PerspectiveCamera;
   controls: OrbitControls & Updatable;

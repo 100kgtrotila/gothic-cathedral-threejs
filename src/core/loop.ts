@@ -1,6 +1,5 @@
 import { Clock, PerspectiveCamera, Scene, WebGLRenderer } from 'three';
 
-// Усі об'єкти, які хочуть анімуватися, повинні мати метод tick
 export interface Updatable {
     tick: (delta: number, elapsedTime: number) => void;
 }
